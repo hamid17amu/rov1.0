@@ -245,6 +245,8 @@ body {
 .faq-heading {
   border-bottom: #777;
   padding: 20px 60px;
+  align-content: center;
+  align-self: center;
 }
 .faq-container {
   display: flex;
@@ -264,11 +266,12 @@ body {
   width: 60%;
   border: none;
   outline: none;
+  background-color: #ffffff;
   transition: 0.4s;
   margin: auto;
 }
 .faq-body {
-  margin: auto;
+  margin-left: 20%;
   /* text-align: center; */
   width: 50%;
   padding: auto;
