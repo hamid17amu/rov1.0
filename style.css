@@ -117,10 +117,10 @@ body {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #f6d155;
+  background: #89CFF0;
   border: 2px solid #006e51;
   border-radius: 40px;
-  text-align: center;
+  text-align: center; 
   font-size: 18px;
   color: #006e51;
   z-index: 1;
@@ -136,7 +136,7 @@ body {
 
 .container15 .content {
   padding: 30px 90px 30px 30px;
-  background: #f6d155;
+  background: #89CFF0;
   position: relative;
   border-radius: 0 500px 500px 0;
 }
