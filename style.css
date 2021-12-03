@@ -207,6 +207,9 @@ body {
   }
 }
 
+.link { color: black; } /* CSS link color (red) */
+.link:hover { color: #89CFF0; }
+
 .sponsor_img {
   width: 100%;
   height: 200px;
