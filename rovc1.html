@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MTS AMU</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="css/aos.css" rel="stylesheet">
+
+    <!-- cardSwipe -->
+    <link rel="stylesheet" href="css/cardSwipe.css">
+
+
+    <link href="css/templatemo-nomad-force.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tabs.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .head{
+            text-align: center;
+            
+            color:#89CFF0;
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            align-items: center;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .report{
+            text-align: center;
+        }
+        .teams{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .swiper {
+        width: 90em;
+        height: 40em;
+        }
+
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .winners h1 {
+            font-weight: bold;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- <section class="hero" id="hero">
+            <div class="heroText">
+                <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
+                    AMUROV Challenge 1.0
+                </h1>
+
+            </div>
+
+            <div class="videoWrapper">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="videos/background.mp4">
+                    <source src="videos/background.mp4" type="video/mp4;codecs=avc1.42E01E, mp4a.40.2">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="overlay"></div>
+        </section> -->
+
+         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <strong>MTS-AUV ZHCET</strong>
+                </a>
+
+                <!-- <h1 class="head">AMUROVc 1.0</h1> -->
+
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#hero">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About the event</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link" href="index.html#timeline">Timeline</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#register">Register</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#faq">FAQs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                                  <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 0;">
+                                      Past Events
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <li><a class="nav-link dropdown-item" href="rovc1.html">AMUROVc 1.0</a></li>
+                                    </ul>
+                                  </li>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="head">AMUROVc 1.0</h1>
+
+        <div class="swiper mySwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/slide1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide7.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide8.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide9.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide10.jpg" alt=""></div>
+            
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <section class="section-padding pb-0" id="about">
+            <div class="container mb-5 pb-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-3" data-aos="fade-up">About the competition...</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-3 mb-lg-5">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="300">AMUROV is a national-level student
+                            competition organised by Marine Technology Society, Autonomous Underwater Vehicle Club
+                            MTS-AUV <a rel="nofollow" href="https://ieeeamu.in/" target="_parent">in collaboration with
+                                Institute of Electrical and Electronics Engineers, IEEE AMU,</a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
+                        <p data-aos="fade-up" data-aos-delay="500">established to generate and enhance a community of
+                            innovators capable of making substantive contributions to the remotely operated underwater
+                            vehicles
+                            (ROVs) domain.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+
+            <div class="profilecards">
+                <div class="person-card">
+                    <h2 style="margin-left: 50px;">Chief Guest</h2>
+                    <img class="person-img" src="/images/people/Dr_R_Venkatesan.jpg" alt="Bill Gates" />
+                    <div class="person-info">
+                        <div class="details-title">
+                            <h3 class="text-white mb-0">Dr. R. Venkatesan</h3>
+                            <!-- <p class="text-secondary-white-color mb-0">Chief Executive Officer, Co-Founder</p> -->
+                        </div>
+                        <div class="details-body">
+                            Full bright Awardee, Honorific Scholar - U Mass, USA, Chair GRA Intergovernmental
+                            Oceanographic Commision, IOC of UNESCO Paris, Vice-Chair of SG-OOIS fo World Meteorological
+                            Organization, WMO, Geneva, Chair MTS India Section , Scientist G and Head Ocean Observation,
+                            NIOT, MoES, Chennai
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h6 style="margin-left: 34%">Download rulebook by clicking <a href="ROV Competition Documentation-2.pdf"
+                    attributes-list download="Rulebook"> <u style="color: #89CFF0;">here</u> </a></h6>
+
+            <div style="margin-left: 41%">Last updated on 02/12/21</div>
+            <img style="margin-left: 35%;" src="images/MATE-ROV-logo.jpg" />
+
+
+
+        </section>
+
+        <section data-aos="fade-up">
+            <h2 style="margin-left: 41%;">Participated Teams</h2>
+            <!-- <table>
+                <tr>
+                    <th>Team Name</th>
+                    <th>College Name</th>
+                    <th>Report</th>
+                </tr>
+                <tr>
+                    <td>Hustlers</td>
+                    <td>Zakir Husain College of Engineering And Technology, AMU</td>
+                    <td><a href="#">Click Here</a></td>
+                </tr>
+
+                <tr>
+                    <td>DTU AUV</td>
+                    <td>Delhi Technological University</td>
+                    <td><a href="#">Click Here</a></td>
+
+                </tr>
+                <tr>
+                    <td>Plus Ultraz</td>
+                    <td>BANNARI AMMAN INSTITUTE OF TECHNOLOGY</td>
+                    <td><a href="#">Click Here</a></td>
+
+                </tr>
+                <tr>
+                    <td>BIT-MAL-ROV</td>
+                    <td>BANNARI AMMAN INSTITUTE OF TECHNOLOGY</td>
+                    <td><a href="#">Click Here</a></td>
+
+                </tr>
+
+
+                <tr>
+                    <td>AUV Team Nirma</td>
+                    <td>Institute Of Technology, Nirma University</td>
+                    <td><a href="#">Click Here</a></td>
+                </tr>
+
+            </table> -->
+
+            <div class="teams">
+                <h5>Team Huslers</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quia iusto quam, nesciunt amet non at ut cumque asperiores ducimus tempore placeat ullam fugiat optio iure maxime, aliquam dolores nobis accusamus dolorem magni facere deserunt.</p>
+                <a href="#">Click here for Complete Report</a>
+                <hr>
+            </div>
+            <div class="teams">
+                <h5>Team DTU-AUV</h5>
+                <p>Vehicle: Arkaja 2.0<br>Faculty Advisor: Dr. Ajeet Kumar<br>Team Captain: Sriram Chava<br>Team Members: Utkarsh Verma, Shivang Dudani, Saurav Ranjan, Suryansh Gangwar</p>
+                <a href="DTUAUV.pdf">Click here for Complete Report</a>
+                <hr>
+            </div>
+            <div class="teams">
+                <h5>Team Plus Ultraz</h5>
+                <p>Vehicle: ETAN 1.0<br>Faculty Advisor: Mr. Selvamuthukumaran<br>Team Members: Sakthivel P, Jaswanthkumar M, Santhoosh R, Kavin E, Balaganesh S</p>
+                <a href="PlusUltraz.pdf">Click here for Complete Report</a>
+                <hr>
+            </div>
+            <div class="teams">
+                <h5>Team BIT-MAL-ROV</h5>
+                <p>Vehicle: <br>Faculty Advisor: Kamal Basha. K<br>Team Captain: Prasanth.T<br>Team Members: Vasanth. S, Moohanakrishnan. K , Kamalesh. J, Srivishnu. S . S</p>
+                <a href="BITMAL.pdf">Click here for Complete Report</a>
+                <hr>
+            </div>
+            <div class="teams">
+                <h5>Team Nirma</h5>
+                <p>Vehicle: Agastya-1<br>Faculty Advisor: Dr. Mihir Chauhan and Dr. Akash Mecwan<br>Team Members: Akshar Chauhan, Nisarg Panchal, Ishika Saijwal, Krunal Bhatt, Kathan Patel, Masoom Lalani, Sanskruti Gondaliya, Akshat Patel</p>
+                <a href="Nirma.pdf">Click here for Complete Report</a>
+                <hr>
+            </div>
+
+        </section>
+
+        <section class="section-padding">
+            <h1 style="text-align:center;">Winners</h1>
+            <!-- <h3>First position</h3> -->
+            <div class="winners">
+                <div class="winner-wrap">
+                    <!-- <div class="medal-box"><i class="fas fa-medal"></i></div> -->
+                    <div class="winnerPoster"><img src="" alt=""></div>
+                    <h1>Team Hustlers</h1>
+                    <h2>Zakir Husain College of Engineering And Technology, Aligarh Muslim University</h2>
+                    <div class="winner-ribbon">WINNER 1st PLACE</div>
+                    <div class="right-ribbon"></div>
+                    <div class="left-ribbon"></div>
+                </div>
+                <div class="winner-wrap">
+                    <!-- <div class="medal-box"><i class="fas fa-medal"></i></div> -->
+                    <div class="winnerPoster"><img src="" alt=""></div>
+                    <h1>Team PLUZ ULTRAZ </h1>
+                    <h2>BANNARI AMMAN INSTITUTE OF TECHNOLOGY</h2>
+                    <div class="winner-ribbon">WINNER 1st PLACE</div>
+                    <div class="right-ribbon"></div>
+                    <div class="left-ribbon"></div>
+                </div>
+            </div>
+            <!-- <h3>Second position</h3> -->
+            <div class="winners">
+                <div class="winner-wrap">
+                    <!-- <div class="medal-box"><i class="fas fa-medal"></i></div> -->
+                    <div class="winnerPoster"><img src="" alt=""></div>
+                    <h1>BIT-MAL-ROV</h1>
+                    <h2>BANNARI AMMAN INSTITUTE OF TECHNOLOGY</h2>
+                    <div class="winner-ribbon">WINNER 2nd PLACE</div>
+                    <div class="right-ribbon"></div>
+                    <div class="left-ribbon"></div>
+                </div>
+            </div>
+
+            <h1 style="text-align:center;">Special Award</h1>
+            <div class="winners">
+                <div class="winner-wrap">
+                    <!-- <div class="medal-box"><i class="fas fa-medal"></i></div> -->
+                    <div class="winnerPoster"><img src="" alt=""></div>
+                    <h1>DTU AUV</h1>
+                    <h2>Delhi Technological University</h2>
+                    <div class="winner-ribbon">Wonder-Sub Award</div>
+                    <div class="right-ribbon"></div>
+                    <div class="left-ribbon"></div>
+                </div>
+            </div>
+        </section>
+
+        <p class="report"><a href="#">Click here for complete report</a></p>
+        <hr style="margin: 5% 5%;">
+
+        <h1 style="text-align: center;">Sponsors</h3>
+
+        <div class="cardSlide">
+            <div class="slideContainer swiper">
+                <div class="slideContent">
+                    <div class="cardWrapper swiper-wrapper">
+                        <div class="card1 swiper-slide">
+                            <div class="imgContent">
+                                <span class="cardOverlay"></span>
+
+                                <div class="cardImage">
+                                    <img src="images/burgernwings.jpeg" alt="" class="cardimg">
+                                </div>
+                            </div>
+
+                            <div class="cardContent">
+                                <h2 class="cardName">Burger n' Wings</h2>
+                                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore omnis error optio praesentium odio nostrum eius nobis asperiores voluptates.</p>
+                            
+                                <button class="cardBtn">View More</button>
+                            </div>
+                        </div>
+
+                        <div class="card1 swiper-slide">
+                            <div class="imgContent">
+                                <span class="cardOverlay"></span>
+
+                                <div class="cardImage">
+                                    <img src="images/andromeida.jpeg" alt="" class="cardimg">
+                                </div>
+                            </div>
+
+                            <div class="cardContent">
+                                <h2 class="cardName">Andromeida</h2>
+                                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore omnis error optio praesentium odio nostrum eius nobis asperiores voluptates.</p>
+                            
+                                <button class="cardBtn">View More</button>
+                            </div>
+                        </div>
+
+                        <div class="card1 swiper-slide">
+                            <div class="imgContent">
+                                <span class="cardOverlay"></span>
+
+                                <div class="cardImage">
+                                    <img src="images/AmzaarFaisal.jpg" alt="" class="cardimg">
+                                </div>
+                            </div>
+
+                            <div class="cardContent">
+                                <h2 class="cardName">Amzaar Faisal</h2>
+                                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore omnis error optio praesentium odio nostrum eius nobis asperiores voluptates.</p>
+                            
+                                <button class="cardBtn">View More</button>
+                            </div>
+                        </div>
+
+                        <div class="card1 swiper-slide">
+                            <div class="imgContent">
+                                <span class="cardOverlay"></span>
+
+                                <div class="cardImage">
+                                    <img src="images/AmzaarFaisal.jpg" alt="" class="cardimg">
+                                </div>
+                            </div>
+
+                            <div class="cardContent">
+                                <h2 class="cardName">Amzaar Faisal</h2>
+                                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore omnis error optio praesentium odio nostrum eius nobis asperiores voluptates.</p>
+                            
+                                <button class="cardBtn">View More</button>
+                            </div>
+                        </div>
+
+                        <div class="card1 swiper-slide">
+                            <div class="imgContent">
+                                <span class="cardOverlay"></span>
+
+                                <div class="cardImage">
+                                    <img src="images/AmzaarFaisal.jpg" alt="" class="cardimg">
+                                </div>
+                            </div>
+
+                            <div class="cardContent">
+                                <h2 class="cardName">Amzaar Faisal</h2>
+                                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore omnis error optio praesentium odio nostrum eius nobis asperiores voluptates.</p>
+                            
+                                <button class="cardBtn">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+        <section class=" contact section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-12 mx-auto">
+
+
+                        <h2 class="mb-4 text-center" data-aos="fade-up">Don't be shy, write to us</h2>
+
+
+
+                        <form action="https://formspree.io/f/xknklgnb" method="POST" class="contact-form" role="form"
+                            data-aos="fade-up">
+
+                            <div class="row">
+
+                                <div class="col-lg-6 col-6">
+                                    <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+
+                                    <input type="text" name="name" id="name" class="form-control"
+                                        placeholder="Full name" required>
+                                </div>
+
+                                <div class="col-lg-6 col-6">
+                                    <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+
+                                    <input type="email" name="_replyto" id="email" pattern="[^ @]*@[^ @]*"
+                                        class="form-control" placeholder="Email address" required>
+                                </div>
+
+                                <div class="col-12 my-4">
+                                    <label for="message" class="form-label">How can we help?</label>
+
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                        placeholder="Write something to us!" required></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-5 col-12 mx-auto mt-5">
+                                <button type="submit" class="form-control">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <h5 class="text-white">
+                        <i class="bi-geo-alt-fill me-2"></i>
+                        Aligarh Muslim University, India
+                    </h5>
+
+                    <a href="mailto:auvzhcet@zhcet.ac.in" class="custom-link mt-3 mb-5">
+                        auvzhcet@zhcet.ac.in
+                    </a>
+                </div>
+
+                <div class="col-6">
+                    <p class="copyright-text mb-0">MTS AUV STB
+
+                        <br><br>Design: <a href="ieeeamu.ac.in" target="_parent">MTS AUV AMU</a>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 col-5 ms-auto">
+                    <ul class="social-icon">
+                        <li><a href="https://www.facebook.com/auvzhcetclub/" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li><a href="https://twitter.com/auv_zhcet" class="social-icon-link bi-twitter"></a></li>
+
+                        <li><a href="https://www.instagram.com/auv_zhcet" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            </section>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/faq.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/cardSwipe.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          grabCursor: 'true',
+          pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        }); 
+      </script>
+</body>
+
+</html>
