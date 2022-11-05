@@ -111,6 +111,18 @@
         .winners h1 {
             font-weight: bold;
         }
+        .mateImg{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+
+        }
+        @media screen and (max-width: 768px) {
+            .imageSwipe{
+                width: 24em;
+                height: 16em;
+            }
+        }
     
     </style>
 
@@ -147,14 +159,14 @@
 
                 <!-- <h1 class="head">AMUROVc 1.0</h1> -->
 
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button> -->
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html#hero">Home</a>
                         </li>
 
@@ -162,13 +174,13 @@
                             <a class="nav-link" href="index.html#about">About the event</a>
                         </li>
 
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html#timeline">Timeline</a>
                         </li>
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="index.html#register">Register</a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#faq">FAQs</a>
@@ -178,7 +190,7 @@
                             <a class="nav-link" href="index.html#contact">Contact Us</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item active">
                                   <li class="dropdown">
                                     <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 0;">
                                       Past Events
@@ -263,18 +275,18 @@
 
             </div>
 
-            <h6 style="margin-left: 34%">Download rulebook by clicking <a href="ROV Competition Documentation-2.pdf"
+            <h6 style="text-align: center;">Download rulebook by clicking <a href="ROV Competition Documentation-2.pdf"
                     attributes-list download="Rulebook"> <u style="color: #89CFF0;">here</u> </a></h6>
 
-            <div style="margin-left: 41%">Last updated on 02/12/21</div>
-            <img style="margin-left: 35%;" src="images/MATE-ROV-logo.jpg" />
+            <div style="text-align: center;">Last updated on 02/12/21</div>
+            <div class="mateImg"><img src="images/MATE-ROV-logo.jpg"></div>
 
 
 
         </section>
 
-        <section data-aos="fade-up">
-            <h2 style="margin-left: 41%;">Participated Teams</h2>
+        <section class="section-padding" data-aos="fade-up">
+            <h2 style="text-align: center;">Participated Teams</h2>
             <!-- <table>
                 <tr>
                     <th>Team Name</th>

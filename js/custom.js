@@ -7,13 +7,13 @@
     AOS.init();
 
     // NAVBAR
-    $('.navbar-nav .nav-link').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
+    // $('.navbar-nav .nav-link').click(function(){
+    //     $(".navbar-collapse").collapse('hide');
+    // });
 
     // NEWS IMAGE RESIZE
     function NewsImageResize(){
-      $(".navbar").scrollspy({ offset: -76 });
+      $ (".navbar").scrollspy({ offset: -76 });
       
       var LargeImage = $('.large-news-image').height();
 
