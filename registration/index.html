@@ -1,212 +1,1439 @@
-<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.38030" type="text/javascript"></script>
-<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.38030" type="text/javascript"></script>
-<script src="https://cdn03.jotfor.ms/js/vendor/imageinfo.js?v=3.3.38030" type="text/javascript"></script>
-<script src="https://cdn01.jotfor.ms/file-uploader/fileuploader.js?v=3.3.38030"></script>
-<script type="text/javascript">	JotForm.newDefaultTheme = true;
-	JotForm.extendsNewTheme = false;
-	JotForm.singleProduct = false;
-	JotForm.newPaymentUIForNewCreatedForms = true;
-	JotForm.newPaymentUI = true;
-	JotForm.clearFieldOnHide="disable";
-	JotForm.submitError="jumpToFirstError";
+<script
+  src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.38109"
+  type="text/javascript"
+></script>
+<script
+  src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.38109"
+  type="text/javascript"
+></script>
+<script
+  src="https://cdn03.jotfor.ms/js/vendor/imageinfo.js?v=3.3.38109"
+  type="text/javascript"
+></script>
+<script src="https://cdn01.jotfor.ms/file-uploader/fileuploader.js?v=3.3.38109"></script>
+<script type="text/javascript">
+  JotForm.newDefaultTheme = true;
+  JotForm.extendsNewTheme = false;
+  JotForm.singleProduct = false;
+  JotForm.newPaymentUIForNewCreatedForms = true;
+  JotForm.newPaymentUI = true;
+  JotForm.clearFieldOnHide = "disable";
+  JotForm.submitError = "jumpToFirstError";
 
-	JotForm.init(function(){
-	/*INIT-START*/
-if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_5').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_50').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_51').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_9').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_39').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_40').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_41').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_42').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_43').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_44').setAttribute('tabindex',0);
-      JotForm.alterTexts({"ageVerificationError":"You must be older than {minAge} years old to submit this form.","alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","appointmentSelected":"You’ve selected {time} on {date}","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","confirmClearForm":"Are you sure you want to clear the form","confirmEmail":"E-mail does not match","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","doneButton":"Done","doneMessage":"Well done! All errors are fixed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","email":"Enter a valid e-mail address","error":"Error","fieldError":"field has an error.","fillMask":"Field value must fill mask.","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoNotAvailableTitle":"Position Unavailable","geoPermissionDesc":"Check your browser's privacy settings.","geoPermissionTitle":"Permission Denied","geoTimeoutDesc":"Please check your internet connection and try again.","geoTimeoutTitle":"Timeout","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","justSoldOut":"Just Sold Out","lessThan":"Your score should be less than or equal to","maxDigitsError":"The maximum digits allowed is","maxFileSize_infoMessage":"Max. file size","maxSelectionsError":"The maximum number of selections allowed is ","minCharactersError":"The number of characters should not be less than the minimum value:","minSelectionsError":"The minimum required number of selections is ","multipleError":"There are {count} errors in this page. Please correct them before moving on.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","nextButtonText":"Next","noSlotsAvailable":"No slots available","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"This field can only contain numeric values","oneError":"There is {count} error in this page. Please correct it before moving on.","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","prevButtonText":"Previous","progressMiddleText":"of","required":"This field is required.","requiredLegend":"All fields marked with * are required and must be filled.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","restrictedDomain":"This domain is not allowed","reviewBackText":"Back to Form","reviewSubmitText":"Review and Submit","seeAllText":"See All","seeErrorsButton":"See Errors","selectionSoldOut":"Selection Sold Out","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","soldOut":"Sold Out","submissionLimit":"Sorry! Only one entry is allowed. &lt;br&gt; Multiple submissions are disabled for this form.","submitButtonText":"Submit","subProductItemsLeft":"({count} items left)","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","validateEmail":"You need to validate this e-mail","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
-      JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
-      FormTranslation.init({"detectUserLanguage":"1","firstPageOnly":"0","options":"English (US)","originalLanguage":"en","primaryLanguage":"en","saveUserLanguage":"1","showStatus":"flag-with-nation","theme":"light-theme","version":"2"});
-      setTimeout(function() {
-          JotForm.initMultipleUploads();
-      }, 2);
-	/*INIT-END*/
-	});
+  JotForm.init(function () {
+    /*INIT-START*/
+    if (window.JotForm && JotForm.accessible)
+      $("input_4").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_5").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_6").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_8").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_50").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_51").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_9").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_39").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_40").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_41").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_42").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_43").setAttribute("tabindex", 0);
+    if (window.JotForm && JotForm.accessible)
+      $("input_44").setAttribute("tabindex", 0);
+    JotForm.alterTexts({
+      ageVerificationError:
+        "You must be older than {minAge} years old to submit this form.",
+      alphabetic: "This field can only contain letters",
+      alphanumeric: "This field can only contain letters and numbers.",
+      appointmentSelected: "You’ve selected {time} on {date}",
+      ccDonationMinLimitError: "Minimum amount is {minAmount} {currency}",
+      ccInvalidCVC: "CVC number is invalid.",
+      ccInvalidExpireDate: "Expire date is invalid.",
+      ccInvalidExpireMonth: "Expiration month is invalid.",
+      ccInvalidExpireYear: "Expiration year is invalid.",
+      ccInvalidNumber: "Credit Card Number is invalid.",
+      ccMissingDetails: "Please fill up the credit card details.",
+      ccMissingDonation: "Please enter numeric values for donation amount.",
+      ccMissingProduct: "Please select at least one product.",
+      characterLimitError: "Too many Characters.  The limit is",
+      characterMinLimitError: "Too few characters. The minimum is",
+      confirmClearForm: "Are you sure you want to clear the form",
+      confirmEmail: "E-mail does not match",
+      currency: "This field can only contain currency values.",
+      cyrillic: "This field can only contain cyrillic characters",
+      dateInvalid: "This date is not valid. The date format is {format}",
+      dateInvalidSeparate: "This date is not valid. Enter a valid {element}.",
+      dateLimited: "This date is unavailable.",
+      disallowDecimals: "Please enter a whole number.",
+      doneButton: "Done",
+      doneMessage: "Well done! All errors are fixed.",
+      dragAndDropFilesHere_infoMessage: "Drag and drop files here",
+      email: "Enter a valid e-mail address",
+      error: "Error",
+      fieldError: "field has an error.",
+      fillMask: "Field value must fill mask.",
+      freeEmailError: "Free email accounts are not allowed",
+      generalError:
+        "There are errors on the form. Please fix them before continuing.",
+      generalPageError:
+        "There are errors on this page. Please fix them before continuing.",
+      geoNotAvailableDesc:
+        "Location provider not available. Please enter the address manually.",
+      geoNotAvailableTitle: "Position Unavailable",
+      geoPermissionDesc: "Check your browser's privacy settings.",
+      geoPermissionTitle: "Permission Denied",
+      geoTimeoutDesc: "Please check your internet connection and try again.",
+      geoTimeoutTitle: "Timeout",
+      gradingScoreError: "Score total should only be less than or equal to",
+      incompleteFields:
+        "There are incomplete required fields. Please complete them.",
+      inputCarretErrorA: "Input should not be less than the minimum value:",
+      inputCarretErrorB: "Input should not be greater than the maximum value:",
+      justSoldOut: "Just Sold Out",
+      lessThan: "Your score should be less than or equal to",
+      maxDigitsError: "The maximum digits allowed is",
+      maxFileSize_infoMessage: "Max. file size",
+      maxSelectionsError: "The maximum number of selections allowed is ",
+      minCharactersError:
+        "The number of characters should not be less than the minimum value:",
+      minSelectionsError: "The minimum required number of selections is ",
+      multipleError:
+        "There are {count} errors in this page. Please correct them before moving on.",
+      multipleFileUploads_emptyError:
+        "{file} is empty, please select files again without it.",
+      multipleFileUploads_fileLimitError:
+        "Only {fileLimit} file uploads allowed.",
+      multipleFileUploads_minSizeError:
+        "{file} is too small, minimum file size is {minSizeLimit}.",
+      multipleFileUploads_onLeave:
+        "The files are being uploaded, if you leave now the upload will be cancelled.",
+      multipleFileUploads_sizeError:
+        "{file} is too large, maximum file size is {sizeLimit}.",
+      multipleFileUploads_typeError:
+        "{file} has invalid extension. Only {extensions} are allowed.",
+      multipleFileUploads_uploadFailed:
+        "File upload failed, please remove it and upload the file again.",
+      nextButtonText: "Next",
+      noSlotsAvailable: "No slots available",
+      notEnoughStock: "Not enough stock for the current selection",
+      notEnoughStock_remainedItems:
+        "Not enough stock for the current selection ({count} items left)",
+      noUploadExtensions:
+        "File has no extension file type (e.g. .txt, .png, .jpeg)",
+      numeric: "This field can only contain numeric values",
+      oneError:
+        "There is {count} error in this page. Please correct it before moving on.",
+      pastDatesDisallowed: "Date must not be in the past.",
+      pleaseWait: "Please wait...",
+      prevButtonText: "Previous",
+      progressMiddleText: "of",
+      required: "This field is required.",
+      requiredLegend:
+        "All fields marked with * are required and must be filled.",
+      requireEveryCell: "Every cell is required.",
+      requireEveryRow: "Every row is required.",
+      requireOne: "At least one field required.",
+      restrictedDomain: "This domain is not allowed",
+      reviewBackText: "Back to Form",
+      reviewSubmitText: "Review and Submit",
+      seeAllText: "See All",
+      seeErrorsButton: "See Errors",
+      selectionSoldOut: "Selection Sold Out",
+      slotUnavailable:
+        "{time} on {date} has been selected is unavailable. Please select another slot.",
+      soldOut: "Sold Out",
+      submissionLimit:
+        "Sorry! Only one entry is allowed. &lt;br&gt; Multiple submissions are disabled for this form.",
+      submitButtonText: "Submit",
+      subProductItemsLeft: "({count} items left)",
+      uploadExtensions: "You can only upload following files:",
+      uploadFilesize: "File size cannot be bigger than:",
+      uploadFilesizemin: "File size cannot be smaller than:",
+      url: "This field can only contain a valid URL",
+      validateEmail: "You need to validate this e-mail",
+      wordLimitError: "Too many words. The limit is",
+      wordMinLimitError: "Too few words.  The minimum is",
+    });
+    JotForm.alterTexts(
+      {
+        couponApply: "Apply",
+        couponBlank: "Please enter a coupon.",
+        couponChange: "",
+        couponEnter: "Enter coupon",
+        couponExpired: "Coupon is expired. Please try another one.",
+        couponInvalid: "Coupon is invalid.",
+        couponValid: "Coupon is valid.",
+        shippingShipping: "Shipping",
+        taxTax: "Tax",
+        totalSubtotal: "Subtotal",
+        totalTotal: "Total",
+      },
+      true
+    );
+    FormTranslation.init({
+      detectUserLanguage: "1",
+      firstPageOnly: "0",
+      options: "English (US)",
+      originalLanguage: "en",
+      primaryLanguage: "en",
+      saveUserLanguage: "1",
+      showStatus: "flag-with-nation",
+      theme: "light-theme",
+      version: "2",
+    });
+    setTimeout(function () {
+      JotForm.initMultipleUploads();
+    }, 2);
+    /*INIT-END*/
+  });
 
-   JotForm.prepareCalculationsOnTheFly([null,{"name":"heading","qid":"1","text":"AMU ROV Challenge 2.0","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"description":"","name":"collegeName","qid":"4","subLabel":"","text":"College Name","type":"control_textbox"},{"description":"","name":"state","qid":"5","subLabel":"","text":"State","type":"control_textbox"},{"description":"","name":"city","qid":"6","subLabel":"","text":"City","type":"control_textbox"},null,{"description":"","name":"name8","qid":"8","subLabel":"","text":"Name","type":"control_textbox"},{"description":"","name":"member1","qid":"9","subLabel":"Name","text":"Member 1","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"teamCaptain","qid":"36","text":"Team Captain","type":"control_head"},{"name":"team","qid":"37","text":"Team","type":"control_head"},null,{"description":"","name":"member2","qid":"39","subLabel":"Name","text":"Member 2","type":"control_textbox"},{"description":"","name":"member3","qid":"40","subLabel":"Name","text":"Member 3","type":"control_textbox"},{"description":"","name":"member4","qid":"41","subLabel":"Name","text":"Member 4","type":"control_textbox"},{"description":"","name":"member5","qid":"42","subLabel":"Name","text":"Member 5","type":"control_textbox"},{"description":"","name":"member6","qid":"43","subLabel":"Name","text":"Member 6","type":"control_textbox"},{"description":"","name":"member7","qid":"44","subLabel":"Name","text":"Member 7","type":"control_textbox"},null,null,{"description":"","name":"paymentReceipt","qid":"47","subLabel":"Screenshot or photo of Receipt","text":"Payment receipt ","type":"control_fileupload"},{"name":"payment","qid":"48","text":"Payment","type":"control_head"},null,{"description":"","name":"name50","qid":"50","subLabel":"","text":"Email","type":"control_textbox"},{"description":"","name":"name51","qid":"51","subLabel":"","text":"Phone Number","type":"control_textbox"},null,{"name":"heading52","qid":"53","text":"","type":"control_head"},{"name":"accountNo","qid":"54","text":"Account No. 5247101005809","type":"control_head"}]);
-   setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"AMU ROV Challenge 2.0","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"description":"","name":"collegeName","qid":"4","subLabel":"","text":"College Name","type":"control_textbox"},{"description":"","name":"state","qid":"5","subLabel":"","text":"State","type":"control_textbox"},{"description":"","name":"city","qid":"6","subLabel":"","text":"City","type":"control_textbox"},null,{"description":"","name":"name8","qid":"8","subLabel":"","text":"Name","type":"control_textbox"},{"description":"","name":"member1","qid":"9","subLabel":"Name","text":"Member 1","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"teamCaptain","qid":"36","text":"Team Captain","type":"control_head"},{"name":"team","qid":"37","text":"Team","type":"control_head"},null,{"description":"","name":"member2","qid":"39","subLabel":"Name","text":"Member 2","type":"control_textbox"},{"description":"","name":"member3","qid":"40","subLabel":"Name","text":"Member 3","type":"control_textbox"},{"description":"","name":"member4","qid":"41","subLabel":"Name","text":"Member 4","type":"control_textbox"},{"description":"","name":"member5","qid":"42","subLabel":"Name","text":"Member 5","type":"control_textbox"},{"description":"","name":"member6","qid":"43","subLabel":"Name","text":"Member 6","type":"control_textbox"},{"description":"","name":"member7","qid":"44","subLabel":"Name","text":"Member 7","type":"control_textbox"},null,null,{"description":"","name":"paymentReceipt","qid":"47","subLabel":"Screenshot or photo of Receipt","text":"Payment receipt ","type":"control_fileupload"},{"name":"payment","qid":"48","text":"Payment","type":"control_head"},null,{"description":"","name":"name50","qid":"50","subLabel":"","text":"Email","type":"control_textbox"},{"description":"","name":"name51","qid":"51","subLabel":"","text":"Phone Number","type":"control_textbox"},null,{"name":"heading52","qid":"53","text":"","type":"control_head"},{"name":"accountNo","qid":"54","text":"Account No. 5247101005809","type":"control_head"}]);}, 20); 
+  JotForm.prepareCalculationsOnTheFly([
+    null,
+    {
+      name: "heading",
+      qid: "1",
+      text: "AMU ROV Challenge 2.0",
+      type: "control_head",
+    },
+    { name: "submit2", qid: "2", text: "Submit", type: "control_button" },
+    null,
+    {
+      description: "",
+      name: "collegeName",
+      qid: "4",
+      subLabel: "",
+      text: "College Name",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "state",
+      qid: "5",
+      subLabel: "",
+      text: "State",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "city",
+      qid: "6",
+      subLabel: "",
+      text: "City",
+      type: "control_textbox",
+    },
+    null,
+    {
+      description: "",
+      name: "name8",
+      qid: "8",
+      subLabel: "",
+      text: "Name",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "member1",
+      qid: "9",
+      subLabel: "Name",
+      text: "Member 1",
+      type: "control_textbox",
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      name: "teamCaptain",
+      qid: "36",
+      text: "Team Captain",
+      type: "control_head",
+    },
+    { name: "team", qid: "37", text: "Team", type: "control_head" },
+    null,
+    {
+      description: "",
+      name: "member2",
+      qid: "39",
+      subLabel: "Name",
+      text: "Member 2",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "member3",
+      qid: "40",
+      subLabel: "Name",
+      text: "Member 3",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "member4",
+      qid: "41",
+      subLabel: "Name",
+      text: "Member 4",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "member5",
+      qid: "42",
+      subLabel: "Name",
+      text: "Member 5",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "member6",
+      qid: "43",
+      subLabel: "Name",
+      text: "Member 6",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "member7",
+      qid: "44",
+      subLabel: "Name",
+      text: "Member 7",
+      type: "control_textbox",
+    },
+    null,
+    null,
+    {
+      description: "",
+      name: "paymentReceipt",
+      qid: "47",
+      subLabel: "Screenshot or photo of Receipt",
+      text: "Payment receipt ",
+      type: "control_fileupload",
+    },
+    { name: "payment", qid: "48", text: "Payment", type: "control_head" },
+    null,
+    {
+      description: "",
+      name: "name50",
+      qid: "50",
+      subLabel: "",
+      text: "Email",
+      type: "control_textbox",
+    },
+    {
+      description: "",
+      name: "name51",
+      qid: "51",
+      subLabel: "",
+      text: "Phone Number",
+      type: "control_textbox",
+    },
+    null,
+    {
+      name: "heading52",
+      qid: "53",
+      text: "Last Date to complete registration : 31\u002F12\u002F2022",
+      type: "control_head",
+    },
+    {
+      name: "accountNo",
+      qid: "54",
+      text: "Account No. 5247101005809",
+      type: "control_head",
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    { name: "mtsauvZhcet", qid: "60", text: "Presents", type: "control_head" },
+  ]);
+  setTimeout(function () {
+    JotForm.paymentExtrasOnTheFly([
+      null,
+      {
+        name: "heading",
+        qid: "1",
+        text: "AMU ROV Challenge 2.0",
+        type: "control_head",
+      },
+      { name: "submit2", qid: "2", text: "Submit", type: "control_button" },
+      null,
+      {
+        description: "",
+        name: "collegeName",
+        qid: "4",
+        subLabel: "",
+        text: "College Name",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "state",
+        qid: "5",
+        subLabel: "",
+        text: "State",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "city",
+        qid: "6",
+        subLabel: "",
+        text: "City",
+        type: "control_textbox",
+      },
+      null,
+      {
+        description: "",
+        name: "name8",
+        qid: "8",
+        subLabel: "",
+        text: "Name",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "member1",
+        qid: "9",
+        subLabel: "Name",
+        text: "Member 1",
+        type: "control_textbox",
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        name: "teamCaptain",
+        qid: "36",
+        text: "Team Captain",
+        type: "control_head",
+      },
+      { name: "team", qid: "37", text: "Team", type: "control_head" },
+      null,
+      {
+        description: "",
+        name: "member2",
+        qid: "39",
+        subLabel: "Name",
+        text: "Member 2",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "member3",
+        qid: "40",
+        subLabel: "Name",
+        text: "Member 3",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "member4",
+        qid: "41",
+        subLabel: "Name",
+        text: "Member 4",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "member5",
+        qid: "42",
+        subLabel: "Name",
+        text: "Member 5",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "member6",
+        qid: "43",
+        subLabel: "Name",
+        text: "Member 6",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "member7",
+        qid: "44",
+        subLabel: "Name",
+        text: "Member 7",
+        type: "control_textbox",
+      },
+      null,
+      null,
+      {
+        description: "",
+        name: "paymentReceipt",
+        qid: "47",
+        subLabel: "Screenshot or photo of Receipt",
+        text: "Payment receipt ",
+        type: "control_fileupload",
+      },
+      { name: "payment", qid: "48", text: "Payment", type: "control_head" },
+      null,
+      {
+        description: "",
+        name: "name50",
+        qid: "50",
+        subLabel: "",
+        text: "Email",
+        type: "control_textbox",
+      },
+      {
+        description: "",
+        name: "name51",
+        qid: "51",
+        subLabel: "",
+        text: "Phone Number",
+        type: "control_textbox",
+      },
+      null,
+      {
+        name: "heading52",
+        qid: "53",
+        text: "Last Date to complete registration : 31\u002F12\u002F2022",
+        type: "control_head",
+      },
+      {
+        name: "accountNo",
+        qid: "54",
+        text: "Account No. 5247101005809",
+        type: "control_head",
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        name: "mtsauvZhcet",
+        qid: "60",
+        text: "Presents",
+        type: "control_head",
+      },
+    ]);
+  }, 20);
 </script>
-<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=63997999613766562e95ef1b"/>
+<style type="text/css">
+  @media print {
+    .form-section {
+      display: inline !important;
+    }
+
+    .form-pagebreak {
+      display: none !important;
+    }
+
+    .form-section-closed {
+      height: auto !important;
+    }
+
+    .page-section {
+      position: initial !important;
+    }
+  }
+</style>
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=63997999613766562e95ef1b"
+/>
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.38109"
+/>
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.38109"
+/>
 <style type="text/css" id="form-designer-style">
-    /* Injected CSS Code */
-.form-label.form-label-auto {
-        
-        display: inline-block;
-        float: left;
-        text-align: left;
-      
-      }
-    /* Injected CSS Code */
+  /* Injected CSS Code */
+  /*PREFERENCES STYLE*/
+  .form-all {
+    font-family: Inter, sans-serif;
+  }
+
+  .form-all .qq-upload-button,
+  .form-all .form-submit-button,
+  .form-all .form-submit-reset,
+  .form-all .form-submit-print {
+    font-family: Inter, sans-serif;
+  }
+
+  .form-all .form-pagebreak-back-container,
+  .form-all .form-pagebreak-next-container {
+    font-family: Inter, sans-serif;
+  }
+
+  .form-header-group {
+    font-family: Inter, sans-serif;
+  }
+
+  .form-label {
+    font-family: Inter, sans-serif;
+  }
+
+  .form-label.form-label-auto {
+    display: inline-block;
+    float: left;
+    text-align: left;
+  }
+
+  .form-line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .form-all {
+    max-width: 752px;
+    width: 100%;
+  }
+
+  .form-label.form-label-left,
+  .form-label.form-label-right,
+  .form-label.form-label-left.form-label-auto,
+  .form-label.form-label-right.form-label-auto {
+    width: 230px;
+  }
+
+  .form-all {
+    font-size: 16px;
+  }
+
+  .form-all .qq-upload-button,
+  .form-all .qq-upload-button,
+  .form-all .form-submit-button,
+  .form-all .form-submit-reset,
+  .form-all .form-submit-print {
+    font-size: 16px;
+  }
+
+  .form-all .form-pagebreak-back-container,
+  .form-all .form-pagebreak-next-container {
+    font-size: 16px;
+  }
+
+  .supernova .form-all,
+  .form-all {
+    background-color: #fff;
+  }
+
+  .form-all {
+    color: #2c3345;
+  }
+
+  .form-header-group .form-header {
+    color: #2c3345;
+  }
+
+  .form-header-group .form-subHeader {
+    color: #2c3345;
+  }
+
+  .form-label-top,
+  .form-label-left,
+  .form-label-right,
+  .form-html,
+  .form-checkbox-item label,
+  .form-radio-item label,
+  span.FITB .qb-checkbox-label,
+  span.FITB .qb-radiobox-label,
+  span.FITB .form-radio label,
+  span.FITB .form-checkbox label,
+  [data-blotid][data-type="checkbox"] [data-labelid],
+  [data-blotid][data-type="radiobox"] [data-labelid],
+  span.FITB-inptCont[data-type="checkbox"] label,
+  span.FITB-inptCont[data-type="radiobox"] label {
+    color: #2c3345;
+  }
+
+  .form-sub-label {
+    color: #464d5f;
+  }
+
+  .supernova {
+    background-color: #ecedf3;
+  }
+
+  .supernova body {
+    background: transparent;
+  }
+
+  .form-textbox,
+  .form-textarea,
+  .form-dropdown,
+  .form-radio-other-input,
+  .form-checkbox-other-input,
+  .form-captcha input,
+  .form-spinner input {
+    background-color: #fff;
+  }
+
+  .supernova {
+    background-image: none;
+  }
+
+  #stage {
+    background-image: none;
+  }
+
+  .form-all {
+    background-image: none;
+  }
+
+  .ie-8 .form-all:before {
+    display: none;
+  }
+
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+
+  /*PREFERENCES STYLE*/
+  /*__INSPECT_SEPERATOR__*/
+  /* Injected CSS Code */
 </style>
 
-<form class="jotform-form" action="https://submit.jotform.co/submit/223475277073056/" method="post" enctype="multipart/form-data" name="form_223475277073056" id="223475277073056" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="223475277073056" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+<form
+  class="jotform-form"
+  action="https://submit.jotform.co/submit/223475277073056/"
+  method="post"
+  enctype="multipart/form-data"
+  name="form_223475277073056"
+  id="223475277073056"
+  accept-charset="utf-8"
+  autocomplete="on"
+>
+  <input type="hidden" name="formID" value="223475277073056" /><input
+    type="hidden"
+    id="JWTContainer"
+    value=""
+  /><input type="hidden" id="cardinalOrderNumber" value="" />
   <div role="main" class="form-all">
-    <link type="text/css" rel="stylesheet" media="all" href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.38030" />
-    <div class="cont"><input type="text" id="input_language" name="input_language" style="display:none" />
-      <div class="language-dd" id="langDd" style="display:none">
+    <link
+      type="text/css"
+      rel="stylesheet"
+      media="all"
+      href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.38109"
+    />
+    <div class="cont">
+      <input
+        type="text"
+        id="input_language"
+        name="input_language"
+        style="display: none"
+      />
+      <div class="language-dd" id="langDd" style="display: none">
         <div class="dd-placeholder lang-emp">Language</div>
         <ul class="lang-list dn" id="langList">
           <li data-lang="en" class="en">English (US)</li>
         </ul>
       </div>
     </div>
-    <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.38030"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.38109"
+    ></script>
     <style>
-      .form-all:before
-      {
+      .form-all:before {
         background: none;
       }
     </style>
     <ul class="form-section page-section">
-      <li id="cid_1" class="form-input-wide" data-type="control_head">
-        <div style="display:table;width:100%">
-          <div class="form-header-group hasImage header-large" data-imagealign="Top">
-            <div class="header-logo"><img src="https://www.jotform.com/uploads/gj8916/form_files/Screenshot%202022-12-15%20at%201.46.19%20AM.639a2f21117d13.85113230.png" alt="" width="419" class="header-logo-top" /></div>
+      <li id="cid_60" class="form-input-wide" data-type="control_head">
+        <div style="display: table; width: 100%">
+          <div
+            class="form-header-group hasImage header-large"
+            data-imagealign="Top"
+          >
+            <div class="header-logo">
+              <img
+                src="https://www.jotform.com/uploads/gj8916/form_files/Screenshot%202022-12-15%20at%201.46.19%20AM.639a2f21117d13.85113230.png"
+                alt=""
+                width="340"
+                class="header-logo-top"
+              />
+            </div>
             <div class="header-text httac htvam">
-              <h1 id="header_1" class="form-header" data-component="header">AMU ROV Challenge 2.0</h1>
-              <div id="subHeader_1" class="form-subHeader">Registration Form</div>
+              <div id="subHeader_60" class="form-subHeader">Presents</div>
+              <h2 id="header_60" class="form-header" data-component="header">
+                AMUROV Challenge 2.0
+              </h2>
             </div>
           </div>
         </div>
       </li>
-      <li id="cid_53" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-default">
-          <div class="header-text httal htvam">
-            <h2 id="header_53" class="form-header" data-component="header"></h2>
-            <div id="subHeader_53" class="form-subHeader">Contact : auvzhcet@zhcet.ac.in</div>
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group header-default">
+          <div class="header-text httac htvam">
+            <h2 id="header_1" class="form-header" data-component="header">
+              Registration Form
+            </h2>
+            <div id="subHeader_1" class="form-subHeader"></div>
           </div>
         </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_4"><label class="form-label form-label-left form-label-auto" id="label_4" for="input_4"> College Name </label>
-        <div id="cid_4" class="form-input" data-layout="half"> <input type="text" id="input_4" name="q4_collegeName" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_4" /> </div>
+      <li id="cid_53" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group header-small">
+          <div class="header-text httal htvam">
+            <h3 id="header_53" class="form-header" data-component="header">
+              Last date to Register : 31st Jan 2022
+            </h3>
+            <div id="subHeader_53" class="form-subHeader">
+              Event Date : 25 -26 Feb<br />Contact : auvzhcet@zhcet.ac.in
+            </div>
+          </div>
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_5"><label class="form-label form-label-left form-label-auto" id="label_5" for="input_5"> State </label>
-        <div id="cid_5" class="form-input" data-layout="half"> <input type="text" id="input_5" name="q5_state" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_5" /> </div>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_4">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_4"
+          for="input_4"
+        >
+          College Name<span class="form-required">*</span>
+        </label>
+        <div id="cid_4" class="form-input jf-required" data-layout="half">
+          <input
+            type="text"
+            id="input_4"
+            name="q4_collegeName"
+            data-type="input-textbox"
+            class="form-textbox validate[required]"
+            data-defaultvalue=""
+            style="width: 310px"
+            size="310"
+            value=""
+            data-component="textbox"
+            aria-labelledby="label_4"
+            required=""
+          />
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_6"><label class="form-label form-label-left form-label-auto" id="label_6" for="input_6"> City </label>
-        <div id="cid_6" class="form-input" data-layout="half"> <input type="text" id="input_6" name="q6_city" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_6" /> </div>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_5">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_5"
+          for="input_5"
+        >
+          State<span class="form-required">*</span>
+        </label>
+        <div id="cid_5" class="form-input jf-required" data-layout="half">
+          <input
+            type="text"
+            id="input_5"
+            name="q5_state"
+            data-type="input-textbox"
+            class="form-textbox validate[required]"
+            data-defaultvalue=""
+            style="width: 310px"
+            size="310"
+            value=""
+            data-component="textbox"
+            aria-labelledby="label_5"
+            required=""
+          />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_6">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_6"
+          for="input_6"
+        >
+          City<span class="form-required">*</span>
+        </label>
+        <div id="cid_6" class="form-input jf-required" data-layout="half">
+          <input
+            type="text"
+            id="input_6"
+            name="q6_city"
+            data-type="input-textbox"
+            class="form-textbox validate[required]"
+            data-defaultvalue=""
+            style="width: 310px"
+            size="310"
+            value=""
+            data-component="textbox"
+            aria-labelledby="label_6"
+            required=""
+          />
+        </div>
       </li>
       <li id="cid_36" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-default">
+        <div class="form-header-group header-default">
           <div class="header-text httac htvam">
-            <h2 id="header_36" class="form-header" data-component="header">Team Captain</h2>
+            <h2 id="header_36" class="form-header" data-component="header">
+              Team Captain
+            </h2>
           </div>
         </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_8"><label class="form-label form-label-left form-label-auto" id="label_8" for="input_8"> Name </label>
-        <div id="cid_8" class="form-input" data-layout="half"> <input type="text" id="input_8" name="q8_name8" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_8" /> </div>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_8">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_8"
+          for="input_8"
+        >
+          Name<span class="form-required">*</span>
+        </label>
+        <div id="cid_8" class="form-input jf-required" data-layout="half">
+          <input
+            type="text"
+            id="input_8"
+            name="q8_name8"
+            data-type="input-textbox"
+            class="form-textbox validate[required]"
+            data-defaultvalue=""
+            style="width: 310px"
+            size="310"
+            value=""
+            data-component="textbox"
+            aria-labelledby="label_8"
+            required=""
+          />
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_50"><label class="form-label form-label-left form-label-auto" id="label_50" for="input_50"> Email </label>
-        <div id="cid_50" class="form-input" data-layout="half"> <input type="text" id="input_50" name="q50_name50" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_50" /> </div>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_50">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_50"
+          for="input_50"
+        >
+          Email<span class="form-required">*</span>
+        </label>
+        <div id="cid_50" class="form-input jf-required" data-layout="half">
+          <input
+            type="text"
+            id="input_50"
+            name="q50_name50"
+            data-type="input-textbox"
+            class="form-textbox validate[required, Email]"
+            data-defaultvalue=""
+            style="width: 310px"
+            size="310"
+            value=""
+            data-component="textbox"
+            aria-labelledby="label_50"
+            required=""
+            placeholder=""
+          />
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_51"><label class="form-label form-label-left form-label-auto" id="label_51" for="input_51"> Phone Number </label>
-        <div id="cid_51" class="form-input" data-layout="half"> <input type="text" id="input_51" name="q51_name51" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_51" /> </div>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_51">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_51"
+          for="input_51"
+        >
+          Phone Number<span class="form-required">*</span>
+        </label>
+        <div id="cid_51" class="form-input jf-required" data-layout="half">
+          <input
+            type="text"
+            id="input_51"
+            name="q51_name51"
+            data-type="input-textbox"
+            class="form-textbox validate[required, Numeric]"
+            data-defaultvalue=""
+            style="width: 310px"
+            size="310"
+            value=""
+            data-component="textbox"
+            aria-labelledby="label_51"
+            required=""
+            placeholder=""
+          />
+        </div>
       </li>
       <li id="cid_37" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-default">
+        <div class="form-header-group header-default">
           <div class="header-text httac htvam">
-            <h2 id="header_37" class="form-header" data-component="header">Team</h2>
+            <h2 id="header_37" class="form-header" data-component="header">
+              Team
+            </h2>
           </div>
         </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_9"><label class="form-label form-label-left form-label-auto" id="label_9" for="input_9"> Member 1 </label>
-        <div id="cid_9" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_9" name="q9_member1" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_9 sublabel_input_9" /> <label class="form-sub-label" for="input_9" id="sublabel_input_9" style="min-height:13px" aria-hidden="false">Name</label></span> </div>
+      <li class="form-line" data-type="control_textbox" id="id_9">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_9"
+          for="input_9"
+        >
+          Member 1
+        </label>
+        <div id="cid_9" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align: top"
+            ><input
+              type="text"
+              id="input_9"
+              name="q9_member1"
+              data-type="input-textbox"
+              class="form-textbox"
+              data-defaultvalue=""
+              style="width: 310px"
+              size="310"
+              value=""
+              data-component="textbox"
+              aria-labelledby="label_9 sublabel_input_9"
+            />
+            <label
+              class="form-sub-label"
+              for="input_9"
+              id="sublabel_input_9"
+              style="min-height: 13px"
+              aria-hidden="false"
+              >Name</label
+            ></span
+          >
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_39"><label class="form-label form-label-left form-label-auto" id="label_39" for="input_39"> Member 2 </label>
-        <div id="cid_39" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_39" name="q39_member2" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_39 sublabel_input_39" /> <label class="form-sub-label" for="input_39" id="sublabel_input_39" style="min-height:13px" aria-hidden="false">Name</label></span> </div>
+      <li class="form-line" data-type="control_textbox" id="id_39">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_39"
+          for="input_39"
+        >
+          Member 2
+        </label>
+        <div id="cid_39" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align: top"
+            ><input
+              type="text"
+              id="input_39"
+              name="q39_member2"
+              data-type="input-textbox"
+              class="form-textbox"
+              data-defaultvalue=""
+              style="width: 310px"
+              size="310"
+              value=""
+              data-component="textbox"
+              aria-labelledby="label_39 sublabel_input_39"
+            />
+            <label
+              class="form-sub-label"
+              for="input_39"
+              id="sublabel_input_39"
+              style="min-height: 13px"
+              aria-hidden="false"
+              >Name</label
+            ></span
+          >
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_40"><label class="form-label form-label-left form-label-auto" id="label_40" for="input_40"> Member 3 </label>
-        <div id="cid_40" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_40" name="q40_member3" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_40 sublabel_input_40" /> <label class="form-sub-label" for="input_40" id="sublabel_input_40" style="min-height:13px" aria-hidden="false">Name</label></span> </div>
+      <li class="form-line" data-type="control_textbox" id="id_40">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_40"
+          for="input_40"
+        >
+          Member 3
+        </label>
+        <div id="cid_40" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align: top"
+            ><input
+              type="text"
+              id="input_40"
+              name="q40_member3"
+              data-type="input-textbox"
+              class="form-textbox"
+              data-defaultvalue=""
+              style="width: 310px"
+              size="310"
+              value=""
+              data-component="textbox"
+              aria-labelledby="label_40 sublabel_input_40"
+            />
+            <label
+              class="form-sub-label"
+              for="input_40"
+              id="sublabel_input_40"
+              style="min-height: 13px"
+              aria-hidden="false"
+              >Name</label
+            ></span
+          >
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_41"><label class="form-label form-label-left form-label-auto" id="label_41" for="input_41"> Member 4 </label>
-        <div id="cid_41" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_41" name="q41_member4" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_41 sublabel_input_41" /> <label class="form-sub-label" for="input_41" id="sublabel_input_41" style="min-height:13px" aria-hidden="false">Name</label></span> </div>
+      <li class="form-line" data-type="control_textbox" id="id_41">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_41"
+          for="input_41"
+        >
+          Member 4
+        </label>
+        <div id="cid_41" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align: top"
+            ><input
+              type="text"
+              id="input_41"
+              name="q41_member4"
+              data-type="input-textbox"
+              class="form-textbox"
+              data-defaultvalue=""
+              style="width: 310px"
+              size="310"
+              value=""
+              data-component="textbox"
+              aria-labelledby="label_41 sublabel_input_41"
+            />
+            <label
+              class="form-sub-label"
+              for="input_41"
+              id="sublabel_input_41"
+              style="min-height: 13px"
+              aria-hidden="false"
+              >Name</label
+            ></span
+          >
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_42"><label class="form-label form-label-left form-label-auto" id="label_42" for="input_42"> Member 5 </label>
-        <div id="cid_42" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_42" name="q42_member5" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_42 sublabel_input_42" /> <label class="form-sub-label" for="input_42" id="sublabel_input_42" style="min-height:13px" aria-hidden="false">Name</label></span> </div>
+      <li class="form-line" data-type="control_textbox" id="id_42">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_42"
+          for="input_42"
+        >
+          Member 5
+        </label>
+        <div id="cid_42" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align: top"
+            ><input
+              type="text"
+              id="input_42"
+              name="q42_member5"
+              data-type="input-textbox"
+              class="form-textbox"
+              data-defaultvalue=""
+              style="width: 310px"
+              size="310"
+              value=""
+              data-component="textbox"
+              aria-labelledby="label_42 sublabel_input_42"
+            />
+            <label
+              class="form-sub-label"
+              for="input_42"
+              id="sublabel_input_42"
+              style="min-height: 13px"
+              aria-hidden="false"
+              >Name</label
+            ></span
+          >
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_43"><label class="form-label form-label-left form-label-auto" id="label_43" for="input_43"> Member 6 </label>
-        <div id="cid_43" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_43" name="q43_member6" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_43 sublabel_input_43" /> <label class="form-sub-label" for="input_43" id="sublabel_input_43" style="min-height:13px" aria-hidden="false">Name</label></span> </div>
+      <li class="form-line" data-type="control_textbox" id="id_43">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_43"
+          for="input_43"
+        >
+          Member 6
+        </label>
+        <div id="cid_43" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align: top"
+            ><input
+              type="text"
+              id="input_43"
+              name="q43_member6"
+              data-type="input-textbox"
+              class="form-textbox"
+              data-defaultvalue=""
+              style="width: 310px"
+              size="310"
+              value=""
+              data-component="textbox"
+              aria-labelledby="label_43 sublabel_input_43"
+            />
+            <label
+              class="form-sub-label"
+              for="input_43"
+              id="sublabel_input_43"
+              style="min-height: 13px"
+              aria-hidden="false"
+              >Name</label
+            ></span
+          >
+        </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_44"><label class="form-label form-label-left form-label-auto" id="label_44" for="input_44"> Member 7 </label>
-        <div id="cid_44" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_44" name="q44_member7" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_44 sublabel_input_44" /> <label class="form-sub-label" for="input_44" id="sublabel_input_44" style="min-height:13px" aria-hidden="false">Name</label></span> </div>
+      <li class="form-line" data-type="control_textbox" id="id_44">
+        <label
+          class="form-label form-label-left form-label-auto"
+          id="label_44"
+          for="input_44"
+        >
+          Member 7
+        </label>
+        <div id="cid_44" class="form-input" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align: top"
+            ><input
+              type="text"
+              id="input_44"
+              name="q44_member7"
+              data-type="input-textbox"
+              class="form-textbox"
+              data-defaultvalue=""
+              style="width: 310px"
+              size="310"
+              value=""
+              data-component="textbox"
+              aria-labelledby="label_44 sublabel_input_44"
+            />
+            <label
+              class="form-sub-label"
+              for="input_44"
+              id="sublabel_input_44"
+              style="min-height: 13px"
+              aria-hidden="false"
+              >Name</label
+            ></span
+          >
+        </div>
       </li>
       <li id="cid_48" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-default">
+        <div class="form-header-group header-default">
           <div class="header-text httac htvam">
-            <h2 id="header_48" class="form-header" data-component="header">Payment</h2>
+            <h2 id="header_48" class="form-header" data-component="header">
+              Payment
+            </h2>
             <div id="subHeader_48" class="form-subHeader">₹ 5000</div>
           </div>
         </div>
       </li>
       <li id="cid_54" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-small">
+        <div class="form-header-group header-small">
           <div class="header-text httal htvam">
-            <h3 id="header_54" class="form-header" data-component="header">Account No. 5247101005809</h3>
-            <div id="subHeader_54" class="form-subHeader">IFSC Code. CNRB0005247</div>
+            <h3 id="header_54" class="form-header" data-component="header">
+              Account No. 5247101005809
+            </h3>
+            <div id="subHeader_54" class="form-subHeader">
+              IFSC Code. CNRB0005247 <br />MICR Code. 202015013<br />Account
+              Name. AUV ZHCET CLUB<br />Canara Bank AMU, Aligarh.
+            </div>
           </div>
         </div>
       </li>
-      <li class="form-line jf-required" data-type="control_fileupload" id="id_47"><label class="form-label form-label-top" id="label_47" for="input_47"> Payment receipt <span class="form-required">*</span> </label>
+      <li
+        class="form-line jf-required"
+        data-type="control_fileupload"
+        id="id_47"
+      >
+        <label class="form-label form-label-top" id="label_47" for="input_47">
+          Payment receipt <span class="form-required">*</span>
+        </label>
         <div id="cid_47" class="form-input-wide jf-required" data-layout="full">
           <div class="jfQuestion-fields" data-wrapper-react="true">
             <div class="jfField isFilled">
               <div class="jfUpload-wrapper">
                 <div class="jfUpload-container">
                   <div class="jfUpload-text-container">
-                    <div class="jfUpload-icon forDesktop"><span class="iconSvg  dhtupload ">function SvgDhtupload(props) {
-                        return /* @__PURE__ */ react.createElement("svg", dhtupload_svg_extends({
-                        width: 54,
-                        height: 47,
-                        xmlns: "http://www.w3.org/2000/svg"
-                        }, props), dhtupload_svg_path || (dhtupload_svg_path = /* @__PURE__ */ react.createElement("path", {
-                        d: "M40.213 10.172c1.897.21 3.68.738 5.35 1.58a15.748 15.748 0 014.374 3.242 15.065 15.065 0 012.951 4.533c.72 1.704 1.08 3.522 1.08 5.455 0 1.827-.28 3.654-.843 5.48-.562 1.828-1.379 3.47-2.45 4.929A13.39 13.39 0 0146.669 39c-1.599.948-3.452 1.458-5.56 1.528H37.26a1.62 1.62 0 01-1.185-.5 1.62 1.62 0 01-.501-1.186c0-.457.167-.852.5-1.186.334-.334.73-.5 1.186-.5h3.848c1.44 0 2.75-.37 3.926-1.108a10.851 10.851 0 003.03-2.846 13.53 13.53 0 001.95-3.9 14.23 14.23 0 00.686-4.321c0-1.582-.316-3.066-.949-4.454a11.623 11.623 0 00-2.582-3.636 12.857 12.857 0 00-3.742-2.478 11.054 11.054 0 00-4.48-.922l-1.212-.053-.37-1.159c-.878-2.81-2.292-4.998-4.242-6.562-1.95-1.563-4.594-2.345-7.932-2.345-2.108 0-4.005.36-5.692 1.08-1.686.72-3.136 1.722-4.348 3.005-1.212 1.282-2.143 2.81-2.793 4.585-.65 1.774-.975 3.68-.975 5.718h.053l.105 1.581-1.528.264c-1.863.316-3.444 1.317-4.744 3.004-1.3 1.686-1.95 3.584-1.95 5.692 0 2.39.8 4.462 2.398 6.219 1.599 1.757 3.488 2.635 5.666 2.635h4.849c.492 0 .896.167 1.212.5.316.335.474.73.474 1.187 0 .456-.158.852-.474 1.185-.316.334-.72.501-1.212.501h-4.849a10.08 10.08 0 01-4.374-.975 11.673 11.673 0 01-3.61-2.661 13.173 13.173 0 01-2.478-3.9A12.073 12.073 0 010 28.301c0-2.706.755-5.148 2.266-7.326 1.511-2.178 3.444-3.636 5.798-4.374.14-2.354.658-4.542 1.554-6.562.896-2.02 2.091-3.777 3.584-5.27 1.494-1.494 3.25-2.662 5.27-3.505C20.493.422 22.733 0 25.193 0c1.898 0 3.637.237 5.218.711 1.581.475 3.004 1.151 4.269 2.03a13.518 13.518 0 013.268 3.215 18.628 18.628 0 012.266 4.216zm-11.964 13.44l6.22 6.85c.245.247.368.537.368.87 0 .334-.123.642-.369.923l-.421.263c-.211.246-.484.343-.817.29a1.544 1.544 0 01-.87-.448l-3.69-4.11v16.97c0 .492-.166.896-.5 1.212-.334.316-.729.474-1.186.474-.492 0-.896-.158-1.212-.474-.316-.316-.474-.72-.474-1.212V28.25l-3.584 4.005a1.544 1.544 0 01-.87.448.959.959 0 01-.87-.29l-.42-.264c-.247-.28-.37-.588-.37-.922 0-.334.123-.624.37-.87l6.113-6.746v-.052l.421-.422a.804.804 0 01.396-.29c.158-.053.307-.079.448-.079.175 0 .333.026.474.079.14.053.281.15.422.29l.421.422v.052z",
-                        fill: "none"
-                        })));
-                        }</span></div>
+                    <div class="jfUpload-icon forDesktop">
+                      <span class="iconSvg dhtupload"
+                        >function SvgDhtupload(props) { return /* @__PURE__ */
+                        react.createElement("svg", dhtupload_svg_extends({
+                        width: 54, height: 47, xmlns:
+                        "http://www.w3.org/2000/svg" }, props),
+                        dhtupload_svg_path || (dhtupload_svg_path = /* @__PURE__
+                        */ react.createElement("path", { d: "M40.213
+                        10.172c1.897.21 3.68.738 5.35 1.58a15.748 15.748 0
+                        014.374 3.242 15.065 15.065 0 012.951 4.533c.72 1.704
+                        1.08 3.522 1.08 5.455 0 1.827-.28 3.654-.843 5.48-.562
+                        1.828-1.379 3.47-2.45 4.929A13.39 13.39 0 0146.669
+                        39c-1.599.948-3.452 1.458-5.56 1.528H37.26a1.62 1.62 0
+                        01-1.185-.5 1.62 1.62 0
+                        01-.501-1.186c0-.457.167-.852.5-1.186.334-.334.73-.5
+                        1.186-.5h3.848c1.44 0 2.75-.37 3.926-1.108a10.851 10.851
+                        0 003.03-2.846 13.53 13.53 0 001.95-3.9 14.23 14.23 0
+                        00.686-4.321c0-1.582-.316-3.066-.949-4.454a11.623 11.623
+                        0 00-2.582-3.636 12.857 12.857 0 00-3.742-2.478 11.054
+                        11.054 0
+                        00-4.48-.922l-1.212-.053-.37-1.159c-.878-2.81-2.292-4.998-4.242-6.562-1.95-1.563-4.594-2.345-7.932-2.345-2.108
+                        0-4.005.36-5.692 1.08-1.686.72-3.136 1.722-4.348
+                        3.005-1.212 1.282-2.143 2.81-2.793 4.585-.65 1.774-.975
+                        3.68-.975 5.718h.053l.105
+                        1.581-1.528.264c-1.863.316-3.444 1.317-4.744 3.004-1.3
+                        1.686-1.95 3.584-1.95 5.692 0 2.39.8 4.462 2.398 6.219
+                        1.599 1.757 3.488 2.635 5.666 2.635h4.849c.492 0
+                        .896.167 1.212.5.316.335.474.73.474 1.187 0
+                        .456-.158.852-.474
+                        1.185-.316.334-.72.501-1.212.501h-4.849a10.08 10.08 0
+                        01-4.374-.975 11.673 11.673 0 01-3.61-2.661 13.173
+                        13.173 0 01-2.478-3.9A12.073 12.073 0 010
+                        28.301c0-2.706.755-5.148 2.266-7.326 1.511-2.178
+                        3.444-3.636 5.798-4.374.14-2.354.658-4.542
+                        1.554-6.562.896-2.02 2.091-3.777 3.584-5.27 1.494-1.494
+                        3.25-2.662 5.27-3.505C20.493.422 22.733 0 25.193 0c1.898
+                        0 3.637.237 5.218.711 1.581.475 3.004 1.151 4.269
+                        2.03a13.518 13.518 0 013.268 3.215 18.628 18.628 0
+                        012.266 4.216zm-11.964 13.44l6.22
+                        6.85c.245.247.368.537.368.87 0
+                        .334-.123.642-.369.923l-.421.263c-.211.246-.484.343-.817.29a1.544
+                        1.544 0 01-.87-.448l-3.69-4.11v16.97c0 .492-.166.896-.5
+                        1.212-.334.316-.729.474-1.186.474-.492
+                        0-.896-.158-1.212-.474-.316-.316-.474-.72-.474-1.212V28.25l-3.584
+                        4.005a1.544 1.544 0 01-.87.448.959.959 0
+                        01-.87-.29l-.42-.264c-.247-.28-.37-.588-.37-.922
+                        0-.334.123-.624.37-.87l6.113-6.746v-.052l.421-.422a.804.804
+                        0 01.396-.29c.158-.053.307-.079.448-.079.175 0
+                        .333.026.474.079.14.053.281.15.422.29l.421.422v.052z",
+                        fill: "none" }))); }</span
+                      >
+                    </div>
                   </div>
                   <div class="jfUpload-button-container">
-                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Browse Files<div class="jfUpload-heading forDesktop">Drag and drop files here</div>
-                      <div class="jfUpload-heading forMobile">Choose a file</div>
+                    <div
+                      class="jfUpload-button"
+                      aria-hidden="true"
+                      tabindex="0"
+                      style="display: none"
+                      data-version="v2"
+                    >
+                      Browse Files
+                      <div class="jfUpload-heading forDesktop">
+                        Drag and drop files here
+                      </div>
+                      <div class="jfUpload-heading forMobile">
+                        Choose a file
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="jfUpload-files-container"><input type="file" id="input_47" name="q47_paymentReceipt[]" multiple="" class="form-upload-multiple validate[required]" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="1" data-component="fileupload" required="" aria-label="Browse Files" /></div>
-              </div><span class="form-sub-label-container" style="vertical-align:top"> <label class="form-sub-label" for="input_47" id="sublabel_input_47" style="min-height:13px" aria-hidden="false">Screenshot or photo of Receipt</label></span>
-            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+                <div class="jfUpload-files-container">
+                  <input
+                    type="file"
+                    id="input_47"
+                    name="q47_paymentReceipt[]"
+                    multiple=""
+                    class="form-upload-multiple validate[required]"
+                    data-imagevalidate="yes"
+                    data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif"
+                    data-file-maxsize="10854"
+                    data-file-minsize="0"
+                    data-file-limit="1"
+                    data-component="fileupload"
+                    required=""
+                    aria-label="Browse Files"
+                  />
+                </div>
+              </div>
+              <span
+                class="form-sub-label-container"
+                style="vertical-align: top"
+              >
+                <label
+                  class="form-sub-label"
+                  for="input_47"
+                  id="sublabel_input_47"
+                  style="min-height: 13px"
+                  aria-hidden="false"
+                  >Screenshot or photo of Receipt</label
+                ></span
+              >
+            </div>
+            <span style="display: none" class="cancelText">Cancel</span
+            ><span style="display: none" class="ofText">of</span>
           </div>
         </div>
       </li>
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide" data-layout="full">
-          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+          <div
+            data-align="auto"
+            class="form-buttons-wrapper form-buttons-auto jsTest-button-wrapperField"
+          >
+            <button
+              id="input_2"
+              type="submit"
+              class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+              data-component="button"
+              data-content=""
+            >
+              Submit
+            </button>
+          </div>
         </div>
       </li>
-      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+      <li style="display: none">
+        Should be Empty: <input type="text" name="website" value="" />
+      </li>
     </ul>
   </div>
 
-  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="223475277073056" />
+  <input
+    type="hidden"
+    class="simple_spc"
+    id="simple_spc"
+    name="simple_spc"
+    value="223475277073056"
+  />
   <script type="text/javascript">
-    var all_spc = document.querySelectorAll("form[id='223475277073056'] .si" + "mple" + "_spc");
-    for (var i = 0; i < all_spc.length; i++)
-    {
+    var all_spc = document.querySelectorAll(
+      "form[id='223475277073056'] .si" + "mple" + "_spc"
+    );
+    for (var i = 0; i < all_spc.length; i++) {
       all_spc[i].value = "223475277073056-223475277073056";
     }
   </script>
 </form>
-<script type="text/javascript">JotForm.ownerView=true;</script>
-<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.38030"></script>
-<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.38030"></script>
+<script type="text/javascript">
+  JotForm.ownerView = true;
+</script>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.38109"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.38109"></script>
