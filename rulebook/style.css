@@ -1911,3 +1911,10 @@ table.table-finalists td:nth-child(6):before {
         page-break-after: avoid
     }
 }
+
+/* center align the download button with class download-btn  */
+.download-btn {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
