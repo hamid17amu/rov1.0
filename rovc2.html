@@ -122,10 +122,68 @@
         .mateImg {
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            /* Adjust the gap between images as needed */
+        }
+
+        .gift-box {
+            position: relative;
+            padding: 20px;
+            border: 2px solid #d4af37;
+            /* Gold color for the gift box border */
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .gift-box::before,
+        .gift-box::after {
+            content: '';
+            position: absolute;
+            background-color: #d4af37;
+            /* Gold color for the ribbon */
+        }
+
+        .gift-box::before {
+            width: 100%;
+            height: 10px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .gift-box::after {
+            width: 10px;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .imgAch {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* .mateImg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             align-self: center;
 
         }
 
+        .imgAch {
+            width: 50%;
+            height: 50%;
+            margin: 2%;
+        } */
         @media screen and (max-width: 768px) {
             .imageSwipe {
                 width: 24em;
@@ -283,9 +341,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-<!-- 
+            <!-- 
             <h6 style="text-align: center;">Download rulebook by clicking <a href="ROV Competition Documentation-2.pdf"
                     attributes-list download="Rulebook"> <u style="color: #89CFF0;">here</u> </a></h6>
 
@@ -342,7 +399,8 @@
 
             <div class="teams">
                 <h5>Team Wave Warriors</h5>
-                <p>Vehicle: SEA 4.0<br>Faculty Advisor: Dr. Saleem Anwar Khan<br>Team Captain: Yusuf Hasan<br>Team Members:
+                <p>Vehicle: SEA 4.0<br>Faculty Advisor: Dr. Saleem Anwar Khan<br>Team Captain: Yusuf Hasan<br>Team
+                    Members:
                     Mohammad Haadi Akhter, Mujtaba Ahmed Ansari, Bilal Dad Khan, Ayesha</p>
                 <a href="#">Click here for Complete Report</a>
                 <hr>
@@ -356,7 +414,8 @@
             </div>
             <div class="teams">
                 <h5>Team Evaders</h5>
-                <p>Vehicle: ETAN 2.0<br>Faculty Advisor: Mr. Selvamuthukumaran<br>Team Members: Abineshwaran, Thangadurai, Raveenthiran, Pranav Surya, Sajjid Ismail M, Manoj S, Karhikeyan, Sanjay Kumar G</p>
+                <p>Vehicle: ETAN 2.0<br>Faculty Advisor: Mr. Selvamuthukumaran<br>Team Members: Abineshwaran,
+                    Thangadurai, Raveenthiran, Pranav Surya, Sajjid Ismail M, Manoj S, Karhikeyan, Sanjay Kumar G</p>
                 <a href="Reports/BIT_ROV2_REPORT.pdf">Click here for Complete Report</a>
                 <hr>
             </div>
@@ -368,8 +427,9 @@
             </div>
             <div class="teams">
                 <h5>Team Nirma</h5>
-                <p>Vehicle: Agastya-2.0 Mini<br>Faculty Advisor: Dr. Mihir Chauhan and Dr. Akash Mecwan<br>Team Members: Sanskruti Gondaliya, Kathan Patel, Neer Patel, Saket Joshi, Vishwesh Rajput, 
-                    Ananya Kapadiya, Dev Raval, Kumar Satyam, Naveen Kalal, Neel Kheni, Parv Raval, 
+                <p>Vehicle: Agastya-2.0 Mini<br>Faculty Advisor: Dr. Mihir Chauhan and Dr. Akash Mecwan<br>Team Members:
+                    Sanskruti Gondaliya, Kathan Patel, Neer Patel, Saket Joshi, Vishwesh Rajput,
+                    Ananya Kapadiya, Dev Raval, Kumar Satyam, Naveen Kalal, Neel Kheni, Parv Raval,
                     Rhythm Patel, Soham Patel, Swayam Satbhai, Vatsal Dagli, Vrushti Shah, and Yatharth Bahuguna </p>
                 <a href="Reports/NIRMA_ROV2_REPORT.pdf">Click here for Complete Report</a>
                 <hr>
@@ -413,7 +473,7 @@
             </div>
         </section>
 
-        <p class="report"><a href="#">Click here for complete report</a></p>
+        <p class="report"><a href="AMU ROVc 2.0 Report.pdf">Click here for complete report</a></p>
         <hr style="margin: 5% 5%;">
 
         <h1 style="text-align: center;">Sponsors</h3>
@@ -521,14 +581,28 @@
                 </div>
             </div>
 
+            <!-- <h2>hello</h2> -->
 
-            <section class=" contact section-padding" id="contact">
+            <section class="achievements" id="rovc2-achievements">
+                <hr style="margin: 5% 5%;">
+                <h1 style="text-align: center;">Achievements</h1>
+                <!-- add achievement images in the images/rovc2/achievements folder -->
+                <div class="mateImg">
+                    <div class="gift-box">
+                        <img src="images/rovc2/achievements/1.png" alt="" class="imgAch">
+                    </div>
+                    <div class="gift-box">
+                        <img src="images/rovc2/achievements/2.png" alt="" class="imgAch">
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin: 5% 5%;">
+
+            <section class="contact section-padding" id="contact">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-7 col-12 mx-auto">
-
-
                             <h2 class="mb-4 text-center" data-aos="fade-up">Don't be shy, write to us</h2>
                             <h4 class="mb-4 text-center" data-aos="fade-up">Email your query auvzhcet@zhcet.ac.in</h3>
                         </div>
