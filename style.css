@@ -476,25 +476,57 @@ body {
   transition: all ease 0.3s;
 }
 
-
-@keyframes fadeout {
-  from {
-    opacity: 0;
-    transform: translateY(-200%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.banner {
+  background-color: #1b7d79;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.226);
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 1;
-    transform: translateY(0);
+.banner h1 {
+  padding: 2vw;
+  background-color: #89cff0;
+  margin: 0;
+  font-size: 6vw;
+  color: #fff;
+}
+
+.banner .amurov {
+  font-weight: bold;
+  font-size: 8vw;
+  color: #1b7d79;
+  letter-spacing: 2px;
+}
+
+.banner .version {
+  font-weight: bold;
+  font-size: 8vw;
+  margin-left: 5px;
+  color: #133e3a;
+}
+
+.banner .competition {
+  padding: 1vw;
+  font-size: 4vw;
+  color: #fff;
+  letter-spacing: 2vw;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 8vw;
   }
-  to {
-    opacity: 0;
-    transform: translateY(-200%);
+
+  .banner .amurov,
+  .banner .version {
+    font-size: 10vw;
+  }
+
+  .banner .competition {
+    font-size: 5vw;
   }
 }
