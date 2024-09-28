@@ -496,23 +496,23 @@ body {
 
 .banner .amurov {
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 6vw;
   color: #1b7d79;
   letter-spacing: 2px;
 }
 
 .banner .version {
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 6vw;
   margin-left: 5px;
   color: #133e3a;
 }
 
 .banner .competition {
   padding: 1vw;
-  font-size: 4vw;
+  font-size: 3vw;
   color: #fff;
-  letter-spacing: 2vw;
+  letter-spacing: 1vw;
   font-weight: bold;
 }
 
