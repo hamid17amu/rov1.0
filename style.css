@@ -64,10 +64,22 @@ body {
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
-  background: #ffffff;
+  /* background: #ffffff; */
   border: 2px solid #006e51;
   border-radius: 16px;
   z-index: 1;
+}
+
+.container15::after{
+  background: #006e51;
+}
+
+.container15.done::after {
+  background: red;
+}
+
+.container15.coming::after {
+  background: rgb(242, 202, 6);
 }
 
 .container15.right::after {
